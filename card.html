@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <title>Coffe-info</title>
+  <link rel="icon" type="image/x-icon" href="./Photos/Logo_Coffee_Nav.png">
+  <script>
+   	function showForm() {
+    document.getElementById("auth").hidden = false;
+    document.getElementById("link").hidden = true;
+   }
+  </script>
+  <link rel="stylesheet" href="./css/card.css">
+</head>
+
+
+
+
+<body>
+
+<div class="container">
+	<header class="card">
+        <div class="card-body">
+            <h5 class="card-title">Coffee-info</h5>
+        </div>
+    </header>
+<div class="card">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="https://shop.tastycoffee.ru/">
+      <img src="./Photos/tasty_coffee_logo_nav.png" alt="" width="30" height="24">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">Главная</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#head_var_coffee">Виды кофе</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#head_acces">Кофейные аксессуары</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="table.html">Сравнительная таблица</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="facts.html">Интересные факты</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="choose.html">Выбрать кофе</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="card.html">Карточка кофемана</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="coffee_task.html">Кофейная задачка</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://shop.tastycoffee.ru/coffee" target="_blank">Заказать кофе</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <h2>Форма для создания "карты кофемана"</h2>
+
+	<form action="https://ya.ru">
+	<fieldset class="one">
+		<legend>Контактная информация</legend>
+		<p><label>Имя</label><input type="text" name="first_name" size="20" value="Андрей"></p>
+        <p><label>Фамилия</label><input type="text" name="last_name" size="20" value="Акимов"></p>
+        <p><label>Группа</label><input type="text" name="group" size="20" value="2-я"></p>
+		<p><label>Телефон</label><input type="text" name="tel" size="20" value="+7-(777)-777-77-77"></p>
+		<p><label>Email</label><input type="email" name="email" size="20" value="example@gmail.ru"></p>
+		<p><label>Сегодняшняя дата</label><input type="date" name="date" size="30" value="2024-05-30"></p>
+			</fieldset>
+	 <input type="Submit" name="submit" value="Отправить">
+	  </form>
+
+	<form action="https://ya.ru">
+
+	<fieldset class="one">
+		<legend>Предпочтения владельца карты</legend>
+		<p><label>Частота покупки кофе в неделю</label><input type="number" min="1" max="100" step="1" size="50" name="per_week" value="3"></p>
+		<p><label>Любимый кофе</label>
+		<select name="love">
+		<option value="Капучино"> Капучино </option>
+		<option value="Латте"> Латте </option>
+        <option value="Американо"> Американо </option>
+        <option value="Флет Уайт"> Флет Уайт </option>
+        <option value="Другое"> Другое </option>
+		</select></p>
+
+      <p><label>Для чего вам карта?</label><br>
+		<input type="radio" name="forwhat" value="sale">Скидка
+		<input type="radio" name="forwhat" value="reminder" checked>Напоминания о новых материалах
+		</p>
+
+		<p><label>Что ещё вам хотелось бы узнать о кофе?</label><textarea name="text">Тут обычно пишут предпочтения</textarea></p>
+	</fieldset>
+	<fieldset class="two">
+		<legend>Дополнительно</legend>
+		<p><label>Как вы узнали о нас?</label><br>
+		<input type="checkbox" name="howfind" value="friends" checked>Через друзей<br>
+		<input type="checkbox" name="howfind" value="ad" checked>Через рекламу<br>
+		<input type="checkbox" name="howfind" value="site" checked>Через сайт tasty coffee<br>
+		</p>
+		<p<b><label>Согласны ли вы на обработку персональных данных?</label></b><br>
+		<input type="radio" name="agree" value="Yes" checked>Да<br>
+		<input type="radio" name="agree" value="No">Нет
+		</p>
+	</fieldset>
+	<input type="Submit" name="submit" value="Отправить">
+	</form>
+
+  <p id="link" onclick="showForm()">Уже есть карта?  <b><i><u>Авторизуйся</u></i></b></p>
+  <form id="auth" hidden>
+   <p><label>Логин: <input name="user" required></label></p>
+   <p><label>Пароль: <input name="pass" type="password" required></label></p>
+   <p><input type="submit" value="Войти"></p>
+  </form>
+
+
+
+
+  </div>
+    <footer class="card">
+        <div class="card-body">
+            <h5 class="card-title">Наши соцсети</h5>
+            <p class="card-text">Пока что есть только телеграмм, но мы стремимся к большему!</p>
+            <a href="https://t.me/aaabakery" class="btn btn-primary">Перейти в наш канал</a>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>
