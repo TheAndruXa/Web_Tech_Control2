@@ -53,14 +53,14 @@ async function getResponse01() {
     let node_for_insert = document.getElementById("node_for_insert")
 
     for (key in content_filter) {
-                node_for_insert.innerHTML += `
-                <li style="width: 310px" class="d-flex flex-column m-1 p-1 border bg-body">
+               node_for_insert.innerHTML += `
+                 <li class="card green-background" style="width: 310px; margin: 10px; padding: 10px; border: 1px solid #c3e6cb;">
                 <img style="width: 180px" class="align-self-center" src=${content_filter[key].img}>
                 <h5 class="card-title">${content_filter[key].title}</h5>
-                <p class="card-text">${content_filter[key].description}. </p> <br>
+               <p class="card-text">${content_filter[key].description}. </p> <br>
                 <p class="card-text"> Цена ${content_filter[key].price} р.</p>
                 <input type="hidden" name= "vendor_code" value=${content_filter[key].vendor_code}>
-                <p class="card-text" >Кол-во <input class="w-25" type="text" value="1" name="buy"></p>
+                <p class="card-text" >Заказать?) <input class="w-25" type="number" name="buy" value="1" min="0" max="5"></p>
                 </li>
                         `
             }
@@ -108,7 +108,7 @@ async function getResponse02() {
     let node_for_insert = document.getElementById("node_for_insert")
     for (key in content_filter) {
                 node_for_insert.innerHTML += `
-                <li style="width: 310px" class="d-flex flex-column m-1 p-1 border bg-body">
+                 <li class="card green-background" style="width: 310px; margin: 10px; padding: 10px; border: 1px solid #c3e6cb;">
                 <img style="width: 180px" class="align-self-center" src=${content_filter[key].img}>
                 <h5 class="card-title">${content_filter[key].title}</h5>
                <p class="card-text">${content_filter[key].description}. </p> <br>
