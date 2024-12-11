@@ -7,7 +7,8 @@
   <meta charset="UTF-8">
   <title>Coffe-info</title>
   <link rel="icon" type="image/x-icon" href="./Photos/Logo_Coffee_Nav.png">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/buy.css">
 </head>
 
 
@@ -69,8 +70,8 @@
 
             <h5 class='card-title text-center'>Выбирай кофе</h5>
             <p>Сортировать по:</p>
-            <input type="radio" id="price" name="sort"  onchange="sort()"> цене  </input>
-             <input type="radio" id="title" name="sort"  checked onchange="sort()" > названию </input> <br>
+            <input type="radio" id="price" name="sort"  checked onchange="sort()"> цене  </input>
+             <input type="radio" id="title" name="sort"  onchange="sort()" > названию </input> <br>
              <input type="text" id="search" name="search"  onchange="search()"> Поиск  </input>
             <form action="https://ya.ru/search?" id="UserEnter" name="UserEnter" target="_blank">
                 <input name="q" type="hidden" value="search">
